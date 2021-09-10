@@ -1,1 +1,91 @@
+h1 {
+  font-family: 'Times New Roman', serif;
+  color: darkblue;
+}
+a {
+  font-family: "Times New Roman", serif;
+  font-size: medium;
+}
+
+b {
+  font-family: 'Arial', serif;
+  font-size: medium;
+}
+
+h3{
+  font-family: "Times New Roman", serif;
+  font-style: normal;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+table {
+  background-color: lawngreen;
+  border-width: 3px;
+  border-color: whitesmoke;
+  border-style: ridge;
+  border-spacing: 0px;
+}
+tr, td{
+  border: 3px solid white;
+  border-bottom-color: whitesmoke;
+  border-left-color: #888888;
+}
+
+.wikipedia{
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.wiki-table{
+  background-color: whitesmoke;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  border-spacing: 1px;
+}
+
+.wiki-table tr, .wiki-table td{
+  border: 1px solid white;
+  list-style-type: -moz-ethiopic-numeric;
+}
+.wiki-table1 {
+  background-color: whitesmoke;
+  border-spacing: 10px;
+  border-style: dot-dot-dash;
+  border-color: black;
+}
+
+.new {
+  table-layout: fixed;
+  width: 350px;
+  border-color: 1px black;
+  float: right;
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  vertical-align: top;
+  horiz-align: left;
+  background-color: white;
+  border-spacing: 1px;
+}
+
+.new td, .new tr{
+  border-left-color: white;
+  border-bottom-color: white;
+}
+
+.wiki1 {
+  background-color: lightblue;
+}
+
+
+
+
+
+
+
 
