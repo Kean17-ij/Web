@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторная 3</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<h1>Кеан Путхеаро</h1>
+<h1>НПИбд 01-20</h1>
+<h1>1032205169</h1>
+<div class="container">
+  <div class="function">
+    <h1>Функции</h1>
+    <button onclick="func1()">Задание 1.</button>
+    <script>
+      function func1() {
+      let res = confirm("Check!!!")
+      alert(res);}
+    </script>
+
+    <button onclick="func2()">Задание 2.</button>
+    <script>
+      function func2() {
+        let res1 = prompt("введите свою фамилию");
+        alert("Привет " + res1 + "!!!!")
+      }
+    </script>
+
+    <button onclick="func3()">Задание 3.</button>
+    <script>
+      function func3(){
+        let name = prompt("Имя");
+        let age = prompt("Возраст")
+        let mood = prompt("настроение")
+        document.write("<p>Здравствуйте, " + name )
+        document.write("<p>Тебя " + age + " лет </p>")
+        document.write("<p>И у тебя " + mood + " настроение</p> Всё верно,не так-ли?!")
+      }
+    </script>
+
+    <button onclick="func4()">Задание 4.</button>
+    <script>
+      function  func4(){
+        let x = prompt("Введите значение x ", "0");
+        let y = prompt("Введите значение y", "0.0");
+        let integerX = +x;
+        let floatY = +y;
+        let result = integerX + floatY;
+        document.write(result);
+      }
+    </script>
+
+    <button class="function" onclick="func5()">Задание 5.</button>
+    <script>
+      function  func5(){
+        let firstName = prompt("Введите имя", "сюда");
+        let lastName = prompt("Введите фамилию");
+        let age = prompt("Введите возраст");
+        alert("В следующем году вам будет " + age);
+      }
+    </script>
+
+    <button onclick="func6()">Задание 6.</button>
+    <script>
+      function  func6(){
+        let id = prompt("Введите номер абзаца (1-3)", "1");
+        let p = document.getElementById(id);
+        alert(p.innerHTML);
+      }
+    </script>
+
+    <button onclick="func7()">Задание 7.</button>
+    <script>
+      function  func7(){
+        let id = prompt('Введите номер абзаца (1-3)', '1');
+        let text = prompt('Введите текст абзаца', 'Текст');
+        let p = document.getElementById(id);
+        p.innerHTML = text;
+        alert(text);
+      }
+    </script>
+    <p id='1'>Paragraph 1</p>
+    <p id='2'>Paragraph 2</p>
+    <p id='3'>Paragraph 3</p>
+
+  </div>
+
+  <form>
+    <h3>Пример 5</h3>
+    <div>
+      <label for="Ваше имя">Ваше имя: </label>
+      <input type="text" id="Ваше имя" size="30">
+    </div>
+    <div>
+      <label for="Мужчина">Мужчина</label>
+      <input type="radio" name="Pol" id="Мужчина" >
+    </div>
+  <div>
+    <label for="Женщина">Женщина</label>
+    <input type="radio" name="Pol" id="Женщина" >
+  </div>
+  <div>
+    <label for="Детей">Детей</label>
+    <input type="text" id="Детей" size="7">
+  </div>
+  <div>
+    <label for="Страна">Страна</label>
+    <input type="text" id="Страна" size="7">
+  </div>
+    <div>
+      <ul>
+      <li>
+          <label for="Украина">Украина</label>
+          <input type="checkbox" id="Украина">
+      </li>
+      <li>
+        <label for="Россия">Россия</label>
+        <input type="checkbox" id="Россия">
+      </li>
+      <li>
+        <label>Другая</label>
+        <textarea name="ta" id="ta" cols="50" rows="5"></textarea>
+      </li>
+      </ul>
+    </div>
+    <div>
+      <label for="Электронный адрес">Электронный адрес: </label>
+      <input type="text" id="Электронный адрес" size="30">
+    </div>
+    <p>Для подтверждения ввода нажмите на кнопку SUBMIT.</p>
+    <p>Для сброса введенных данных нажмите на кнопку RESET.</p>
+    <div>
+      <button><span class="und">S</span>umit</button>
+      <button><span class="und">R</span>eset</button>
+    </div>
+  </form>
+  <form class="six">
+    <h3>Пример 6</h3>
+    <p>Данные о пользователе</p>
+    <div>
+      <label for="Имя">Имя: </label>
+    </div>
+    <input type="text" id="Имя" size="7">
+    <div><label for="Фамилия">Фамилия: </label></div>
+    <input type="text" id="Фамилия" size="7">
+    <div>
+      <label for="Отчество">Отчество: </label>
+    </div>
+    <input type="text" id="Отчество" size="7">
+    <p>Укажите ваш пол:</p>
+    <div>
+      <input type="radio" name="Pol1" id="Мужской">
+      <label for="Мужской">Мужской</label>
+    </div>
+    <div>
+      <input type="radio" name="Pol1" id="Женский">
+      <label for="Женский">Женский</label>
+    </div>
+    <p>Анкета:</p>
+    <p>Как вы относитесь к тому, чтобы стать химиком:</p>
+    <div>
+      <input type="checkbox" id="ques1" >
+      <label for="ques1">Положительно, всегда хотел им стать</label>
+    </div>
+    <div>
+      <input type="checkbox" id="ques2" >
+      <label for="ques2">Безразлично, никогда не думал об этом серьезно</label>
+    </div>
+    <div>
+      <input type="checkbox" id="ques3" >
+      <label for="ques3">Отрицательно, меня с детства отталкивают мысли об этом</label>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+
+

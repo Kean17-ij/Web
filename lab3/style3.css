@@ -1,1 +1,43 @@
+* {
+  /*Говорим, что ширину надо считать с учетом паддингов и бордеров*/
+  box-sizing: border-box;
+}
 
+.container{
+  width: 50%;
+  margin: 0 auto;
+}
+
+form {
+  padding: 10px;
+}
+
+form div {
+  margin: 10px 0;
+}
+
+input{
+  border-color: #555555;
+  border-style: solid;
+  border-width: 3px;
+  border-bottom-color: #9b9a9c;
+  border-right-color: #9b9a9c;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+}
+
+button{
+  background-color: bisque;
+  border-width: 2px;
+  width: 50px;
+  height: 30px;
+}
+
+span.und{
+  text-decoration-line: underline;
+}
+
+.function button{
+  background-color: yellow;
+  width: 100px;
+}
